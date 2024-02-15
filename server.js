@@ -1,6 +1,6 @@
 const express = require('express');
 const userRoutes = require('./routes/userRoutes'); // Import the userRoutes file
-const Thought = require('../models/Thought'); // Import the Thought model
+const thought = require('../models/thought'); // Import the Thought model
 const express = require('express');
 const userRoutes = require('./routes/userRoutes');
 const thoughtRoutes = require('./routes/thoughtRoutes');

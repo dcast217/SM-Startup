@@ -1,8 +1,16 @@
 const express = require('express');
 const userRoutes = require('./routes/userRoutes'); // Import the userRoutes file
-
+const Thought = require('../models/Thought'); // Import the Thought model
 const express = require('express');
+const userRoutes = require('./routes/userRoutes');
+const thoughtRoutes = require('./routes/thoughtRoutes');
 const app = express();
+
+// Mount userRoutes at the '/api/users' endpoint
+app.use('/api/users', userRoutes);
+
+// Mount thoughtRoutes at the '/api/thoughts' endpoint
+app.use('/api/thoughts', thoughtRoutes);
 
 // Mount the userRoutes at the '/api' endpoint
 app.use('/api', userRoutes);

@@ -1,4 +1,5 @@
-
+const express = require('express');
+const router = express.Router();
 // GET all thoughts
 router.get('/thoughts', async (req, res) => {
     try {
